@@ -13,6 +13,9 @@ Currently implemented:
   - Encryption with a user-defined key.
   - Decryption with a user-defined key.
   - Brute-force mode that tries all possible shifts across printable ASCII.
+- Vigenere:
+  - Encryption with a user-defined key.
+  - Decryption with a user-defined key.
 - Supports printable ASCII characters (range `32–126`).
 - Modular structure (`cryptokit/caesar.py` contains the cipher logic, `main.py` handles the CLI).
 
