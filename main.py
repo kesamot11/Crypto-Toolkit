@@ -1,9 +1,10 @@
-from cryptokit import caesar
+from cryptokit import caesar, vigenere
 
 intro_text = """
 Crypto Toolkit
 Please select an algorithm
 1 - Caesar Cipher
+2 - Vigenere Cipher
 """
 
 def decide_algorithm(algorithm, text, mode, k):
@@ -22,6 +23,8 @@ def decide_algorithm(algorithm, text, mode, k):
     """
     if algorithm == 1:
         return caesar.interact(text, mode, k)
+    elif algorithm == 2:
+        return vigenere.interact(text, mode, k)
     else:
         return "N/A"
 
@@ -36,7 +39,10 @@ def interaction():
     if mode == 3:
         print(decide_algorithm(algorithm, text, mode, 0))
     else:
-        k = int(input("Enter your key as an integer: "))
+        if algorithm == 1:
+            k = input("Enter your key as an integer: ")
+        elif algorithm == 2:
+            k = input("Enter your key as a String of only letters: ")
         print(decide_algorithm(algorithm, text, mode, k))
 
 def main():

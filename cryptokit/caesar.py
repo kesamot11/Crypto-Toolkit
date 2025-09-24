@@ -12,7 +12,7 @@ def interact(text, mode, k):
     Returns:
         str: The encrypted/decrypted text
     """
-    k = k % 95
+    k = int(k % 95)
     if mode == 3:
         return brute_force(text)
 
@@ -25,10 +25,10 @@ def interact(text, mode, k):
 
 def encrypt(text, k):
     """
-    This function encrypts the input string using caesar cypher with the given key
+    This function encrypts the input string using caesar cipher with the given key
 
     Args:
-        text (string): Input the user wants to hash
+        text (string): Text the user wants to encrypt
         k (int): Key that will be used to encrypt the string
 
     Returns:
@@ -47,7 +47,7 @@ def decrypt(text, k):
     This function decrypts the input string using caesar cipher with the given key
 
     Args:
-        text (string): Input the user wants to hash
+        text (string): Text the user wants to decrypt
         k (int): Key that will be used to encrypt the string
 
     Returns:
