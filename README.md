@@ -1,7 +1,10 @@
 # Crypto Toolkit
 
 A simple Python project for experimenting with classical ciphers.  
-Currently implemented: **Caesar Cipher** with encryption, decryption, and brute-force attack.
+Currently implemented:
+
+- **Caesar Cipher** with encryption, decryption, and brute-force attack.
+- **Vigenere** with encryption, and decryption.
 
 ## Features
 
@@ -41,7 +44,10 @@ Currently implemented: **Caesar Cipher** with encryption, decryption, and brute-
 ### Example
 Crypto Toolkit
 Please select an algorithm
+
 1 - Caesar Cipher
+
+2 - Vigenere
 
 Enter your choice (1-6): 1
 
