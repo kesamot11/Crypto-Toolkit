@@ -44,11 +44,15 @@ Please select an algorithm
 1 - Caesar Cipher
 
 Enter your choice (1-6): 1
+
 Enter your input: hello
+
 Encrypt (1), Decrypt (2) or BruteForce (3 - Caesar only)?: 1
+
 Enter your key as an integer: 3
 
 === RESULT ===
+
 khoor
 
 ## Project Structure
