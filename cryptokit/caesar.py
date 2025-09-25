@@ -48,7 +48,7 @@ def decrypt(text, k):
 
     Args:
         text (string): Text the user wants to decrypt
-        k (int): Key that will be used to encrypt the string
+        k (int): Key that will be used to decrypt the string
 
     Returns:
         str: The decrypted text
